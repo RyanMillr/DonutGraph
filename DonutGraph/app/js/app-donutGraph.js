@@ -1,5 +1,5 @@
 ﻿angular.module('app-donutGraph', ['nvd3'])
-    .controller('myCtrl', function ($scope) {
+    .controller('myCtrl', function ($scope, $http) {
         /* Chart options */
         $scope.options = {  
             chart: {
@@ -7,7 +7,7 @@
                 height: 450,
                 donut: true,
                 x: function(d){return d.key;},
-                y: function(d){return d.y;},
+                y: function(d){return d.value;},
                 showLabels: true,
                 /*
                 pie: {
@@ -27,29 +27,17 @@
             }
         };
 
-        /* Chart data */
+        $http.get("/api/graph/donutgraph").success(function (response) {            
+            $scope.data = response;
+        });
+
+        /* Chart data 
         $scope.data = [
-        {
-            key: "Shrinkage",
-            y: 52.45
-        },
-        {
-            key: "Damage",
-            y: 23.45
-        },
-        {
-            key: "Leprechauns",
-            y: 68.56
-        },
-        {
-            key: "Unicorns",
-            y: 36.21
-        },
         {
             key: "Dragons",
             y: 47.35
         }
-        ];
+        ];*/
 
 
     })

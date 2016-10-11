@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DonutGraph.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -12,9 +13,15 @@ namespace nv3dDonut.Controllers
     {
         [Route("DonutGraph")]
         // GET api/<controller>
-        public IEnumerable<string> Get()
+        public IEnumerable<DonutGraphViewModel> Get()
         {
-            return new string[] { "value1", "value2" };
+            var data = new List<DonutGraphViewModel>();
+            data.Add(new DonutGraphViewModel() { key = "Shrinkage", value = 52.45m });
+            data.Add(new DonutGraphViewModel() { key = "Damage", value = 23.45m });
+            data.Add(new DonutGraphViewModel() { key = "Leprechauns", value = 68.56m });
+            data.Add(new DonutGraphViewModel() { key = "Unicorns", value = 36.21m });
+            data.Add(new DonutGraphViewModel() { key = "Dragons", value = 47.35m });
+            return data;
         }
 
         // GET api/<controller>/5
