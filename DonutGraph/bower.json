@@ -1,0 +1,9 @@
+{
+	"name": "asp.net",
+	"private": true,
+  "dependencies": {
+    "d3": "~4.2.6",
+    "angular": "~1.5.8",
+    "nvd3": "~1.8.4"
+  }
+}
