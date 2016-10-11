@@ -45,6 +45,6 @@
     "commit": "011ac4a3b874cc674e2014999e6c931dc055caee"
   },
   "_source": "https://github.com/novus/nvd3.git",
-  "_target": "~1.8.4",
+  "_target": "^1.7.1",
   "_originalSource": "nvd3"
 }

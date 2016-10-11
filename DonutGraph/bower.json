@@ -1,9 +1,13 @@
 {
-	"name": "asp.net",
-	"private": true,
+  "name": "asp.net",
+  "private": true,
   "dependencies": {
     "d3": "~4.2.6",
-    "angular": "~1.5.8",
-    "nvd3": "~1.8.4"
+    "angular": "1.5.5",
+    "nvd3": "~1.8.4",
+    "angular-nvd3": "~1.0.9"
+  },
+  "resolutions": {
+    "angular": "~1.5.8"
   }
 }

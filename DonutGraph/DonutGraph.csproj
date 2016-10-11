@@ -249,6 +249,23 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\js\app-donutGraph.js" />
+    <Content Include="app\lib\angular-nvd3\dist\angular-nvd3.js" />
+    <Content Include="app\lib\angular-nvd3\dist\angular-nvd3.min.js" />
+    <Content Include="app\lib\angular-nvd3\Gruntfile.js" />
+    <Content Include="app\lib\angular-nvd3\index.js" />
+    <Content Include="app\lib\angular\angular-csp.css" />
+    <Content Include="app\lib\angular\angular.js" />
+    <Content Include="app\lib\angular\angular.min.js" />
+    <Content Include="app\lib\angular\index.js" />
+    <Content Include="app\lib\d3\d3.js" />
+    <Content Include="app\lib\d3\d3.min.js" />
+    <Content Include="app\lib\nvd3\build\nv.d3.css" />
+    <Content Include="app\lib\nvd3\build\nv.d3.js" />
+    <Content Include="app\lib\nvd3\build\nv.d3.min.css" />
+    <Content Include="app\lib\nvd3\build\nv.d3.min.js" />
+    <Content Include="app\lib\nvd3\meteor\export.js" />
+    <Content Include="app\lib\nvd3\package.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -284,6 +301,25 @@
     </Content>
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
+    <Content Include="app\lib\angular-nvd3\.bower.json" />
+    <Content Include="app\lib\angular-nvd3\bower.json" />
+    <Content Include="app\lib\angular-nvd3\LICENSE" />
+    <Content Include="app\lib\angular-nvd3\package.json" />
+    <Content Include="app\lib\angular-nvd3\README.md" />
+    <Content Include="app\lib\angular\.bower.json" />
+    <Content Include="app\lib\angular\angular.min.js.gzip" />
+    <Content Include="app\lib\angular\angular.min.js.map" />
+    <Content Include="app\lib\angular\bower.json" />
+    <Content Include="app\lib\angular\package.json" />
+    <Content Include="app\lib\angular\README.md" />
+    <Content Include="app\lib\d3\.bower.json" />
+    <Content Include="app\lib\d3\bower.json" />
+    <Content Include="app\lib\d3\LICENSE" />
+    <Content Include="app\lib\d3\README.md" />
+    <Content Include="app\lib\nvd3\.bower.json" />
+    <Content Include="app\lib\nvd3\bower.json" />
+    <Content Include="app\lib\nvd3\build\nv.d3.min.css.map" />
+    <Content Include="app\lib\nvd3\build\nv.d3.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

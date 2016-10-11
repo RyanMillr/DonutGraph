@@ -18,16 +18,22 @@
 </head>
 <body>
 
-    <script src="app/scripts/angular/angular.min.js"></script>   
+    <script src="app/lib/angular/angular.min.js"></script>   
     <script src="//d3js.org/d3.v3.min.js"></script>
-    <script src="app/scripts/nvd3/build/nv.d3.min.js"></script>
+    <script src="app/lib/nvd3/build/nv.d3.min.js"></script>
+    <script src="app/lib/angular-nvd3/dist/angular-nvd3.js"></script>
+    <script src="app/js/app-donutGraph.js"></script>
     <!--
-        
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script src="app/scripts/nvd3/build/nv.d3.min.js"></script>
         -->    
+    <div ng-app="app-donutGraph">
+        <div ng-controller="myCtrl">
+            <nvd3 options="options" data="data"></nvd3>
+        </div>
+    </div>
     <script>	
-        var data = [{ "category": "Shrinkage", "cost": 35.70 }, { "category": "Unicorns", "cost": 55.80 }, { "category": "Leprechaun", "cost": 22.11 }, { "category": "Damage", "cost": 35.42 }, { "category": "Dragons", "cost": 73.25 }];
+        var data = [{ "category": "Shrinkage", "cost": 35.70 }, { "category": "Unicorns", "cost": 55.80 }, { "category": "Leprechaun", "cost": 42.11 }, { "category": "Damage", "cost": 35.42 }, { "category": "Dragons", "cost": 73.25 }];
 
 
         var width = 800,
